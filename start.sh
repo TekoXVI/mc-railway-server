@@ -84,7 +84,7 @@ mkdir -p ./logs
 touch ./logs/temp # avoid "no such file or directory"
 rm ./logs/*
 echo "Starting ngrok tunnel in region $ngrok_region"
-ngrok authtoken 2N36T75EHrMKDrHxxOjUSE6HH7r_6ytV7LjrEbdmhsee9LSp
+ngrok authtoken 2pkwDB1fvC2gQTf1iKZIabmsxpC_2qj4tuF9MkBFB9kduHXrd
 ngrok tcp --region in --log=stdout 25565 > $root/status.log &
 echo "Server Up!"
 echo "Server is now running!" > $root/status.log
